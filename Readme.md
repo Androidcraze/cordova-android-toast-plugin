@@ -11,7 +11,7 @@ Installation Instruction
 
 1. Copy **ToastPlugin.java** to your src folder in package **org.apache.cordova.plugin**
 2. Edit res\xml\plugins.xml, add `<plugin name="ToastPlugin" value="org.apache.cordova.plugin.ToastPlugin"/>` into `<plugins> </plugins>`
-3. Add **<script src="toast.js"></script>** in your html file.
+3. Add `<script src="toast.js"></script>` in your html file.
 
 How To Use ?
 ---------------
