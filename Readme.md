@@ -1,7 +1,7 @@
 PhoneGap Toast Plugin
 --------------------------
 
-+ Author: munnadroid
++ Author: Tanin Srivaraphong (Original : munnadroid)
 + License: The MIT License
 + Test on PhoneGap/Cordova 2.3.0
 
