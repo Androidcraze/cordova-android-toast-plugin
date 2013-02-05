@@ -3,7 +3,6 @@
  *
  * Usage:
  *
- * Toast.show("Hello World" , 300);
  * Toast.longshow("Long Toast);
  * Toast.shortshow("Short Toast");
  */
@@ -17,7 +16,7 @@ cordova.define("cordova/plugin/toast", function(require, exports, module) {
     Toast.prototype.LENGTH_SHORT = 0;
     Toast.prototype.LENGTH_LONG = 1;
 
-    Toast.prototype.show = function (msg, duration, successCallback, failureCallback) {
+    Toast.prototype._show = function (msg, duration, successCallback, failureCallback) {
 
         if (duration.toString().toLowerCase() === 'short') {
             duration = this.LENGTH_SHORT;
@@ -30,12 +29,12 @@ cordova.define("cordova/plugin/toast", function(require, exports, module) {
 
     //Short Toast
     Toast.prototype.shortshow = function (msg, duration, successCallback, failureCallback) {
-        this.show(msg, this.LENGTH_SHORT, successCallback, failureCallback);
+        this._show(msg, this.LENGTH_SHORT, successCallback, failureCallback);
     };
 
     //Long Toast
     Toast.prototype.longshow = function (msg, duration, successCallback, failureCallback) {
-        this.show(msg, this.LENGTH_LONG, successCallback, failureCallback);
+        this._show(msg, this.LENGTH_LONG, successCallback, failureCallback);
     };
 
     var toast = new Toast();
