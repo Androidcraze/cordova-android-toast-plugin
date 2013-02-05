@@ -1,13 +1,11 @@
-PhoneGap Toast Plugin
---------------------------
+## PhoneGap Toast Plugin
 
 + Author: Tanin Srivaraphong (Original : munnadroid)
 + License: The MIT License
 + Test on PhoneGap/Cordova 2.3.0
 
 
-Installation Instruction
---------------------------
+## Installation Instruction
 
 1. Copy **ToastPlugin.java** to your src folder in package **org.apache.cordova.plugin**
 
@@ -15,8 +13,7 @@ Installation Instruction
 
 1. Add `<script src="toast.js"></script>` in your html file.
 
-How To Use ?
----------------
+## How To Use
 
  1. Use Toast.longshow
 
@@ -24,10 +21,13 @@ How To Use ?
 
  1. Use Toast.shortshow
 
-	`Toast.shortshow(Message, SuccessCallback, FailureCallback);`
+    `Toast.shortshow(Message, SuccessCallback, FailureCallback);`
 
+## Contributors
 
-Example
-----------
-	Toast.longshow("Hello, I am long Toast");
-	Toast.shortshow("Hello, I am short Toast");
+Original work by [@munnadroid](https://github.com/munnadroid).
+
+## Example
+
+    Toast.longshow("Hello, I am long Toast");
+    Toast.shortshow("Hello, I am short Toast");
