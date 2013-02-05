@@ -17,11 +17,15 @@
 
  1. Use Toast.longshow
 
-    `Toast.longshow(Message, SuccessCallback, FailureCallback);`
+``` javascript
+Toast.longshow(Message [,SuccessCallback, FailureCallback]);
+```
 
  1. Use Toast.shortshow
 
-    `Toast.shortshow(Message, SuccessCallback, FailureCallback);`
+``` javascript
+Toast.shortshow(Message [,SuccessCallback, FailureCallback]);
+```
 
 ## Contributors
 
@@ -29,5 +33,7 @@ Original work by [@munnadroid](https://github.com/munnadroid).
 
 ## Example
 
-    Toast.longshow("Hello, I am long Toast");
-    Toast.shortshow("Hello, I am short Toast");
+``` javascript
+Toast.longshow("Hello, I am long Toast");
+Toast.shortshow("Hello, I am short Toast");
+```
