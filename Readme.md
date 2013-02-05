@@ -18,21 +18,16 @@ Installation Instruction
 How To Use ?
 ---------------
 
- 1. Normal Use
-
-    `window.plugins.Toast.show( Message, Duration, SuccessCallback, FailureCallback);`
-
  1. Use Toast.longshow
 
-    `Toast.longshow( Message, SuccessCallback, FailureCallback);`
+    `Toast.longshow(Message, SuccessCallback, FailureCallback);`
 
- 1. Use Toast.longshow
+ 1. Use Toast.shortshow
 
-	`Toast.shortshow( Message, SuccessCallback, FailureCallback);`
+	`Toast.shortshow(Message, SuccessCallback, FailureCallback);`
 
 
 Example
 ----------
-	Toast.show("Hello Hi, I am Toast and bite me ! :p" , 500);
 	Toast.longshow("Hello, I am long Toast");
 	Toast.shortshow("Hello, I am short Toast");
