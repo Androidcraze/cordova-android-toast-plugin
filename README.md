@@ -2,7 +2,7 @@
 
 + Author: Tanin Srivaraphong (Original : munnadroid)
 + License: The MIT License
-+ Test on PhoneGap/Cordova 2.3.0 - 2.5.0
++ Tested on PhoneGap/Cordova 2.3.0 - 2.6.0
 
 
 ## Installation Instruction
