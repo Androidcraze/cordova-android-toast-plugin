@@ -7,8 +7,7 @@
  * Toast.shortshow("Short Toast");
  */
 
-cordova.define("cordova/plugin/toast", function(require, exports, module) {
-
+cordova.define("org.apache.cordova.plugin.ToastPlugin", function(require, exports, module) {
     var exec = require("cordova/exec");
 
     var Toast = function () {};
@@ -39,13 +38,5 @@ cordova.define("cordova/plugin/toast", function(require, exports, module) {
 
     var toast = new Toast();
     module.exports = toast;
+    window.Toast = toast;
 });
-
-if (!window.plugins) {
-    window.plugins = {};
-}
-
-if (!window.plugins.Toast) {
-    window.plugins.Toast = cordova.require("cordova/plugin/toast");
-    window.Toast = window.plugins.Toast;
-}

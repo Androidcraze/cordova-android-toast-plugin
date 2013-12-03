@@ -1,10 +1,12 @@
 package org.apache.cordova.plugin;
 
-import android.util.Log;
-import org.apache.cordova.api.*;
-import android.widget.Toast;
+import org.apache.cordova.CallbackContext;
+import org.apache.cordova.CordovaPlugin;
 import org.json.JSONArray;
 import org.json.JSONException;
+
+import android.util.Log;
+import android.widget.Toast;
 
 public class ToastPlugin extends CordovaPlugin {
 
