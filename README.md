@@ -1,6 +1,6 @@
 ## PhoneGap Toast Plugin
 
-+ Author: Tanin Srivaraphong (Original : munnadroid) - Modified by Bastien Diederichs
++ Author: Bastien Diederichs (Original : munnadroid, giver)
 + License: The MIT License
 + Tested on PhoneGap/Cordova 3.1.0
 
@@ -12,7 +12,7 @@
 1. Copy **ToastPlugin.java** to your src folder in package **org.apache.cordova.plugin** or add all \org\apache\cordova\plugin\ToastPlugin.java if you don't already have the folders created.
 
 1. Edit res\xml\config.xml (or wherever your config.xml is), add 
-``` javascript
+``` xml
 <feature name="ToastPlugin">
     <param name="android-package" value="org.apache.cordova.plugin.ToastPlugin" />
 </feature>
@@ -37,7 +37,7 @@ as an element of the array `module.exports`
 Toast.longshow(Message [,SuccessCallback, FailureCallback]);
 ```
 
-1. Use Toast.shortshow
+2. Use Toast.shortshow
 
 ``` javascript
 Toast.shortshow(Message [,SuccessCallback, FailureCallback]);
@@ -46,7 +46,7 @@ Toast.shortshow(Message [,SuccessCallback, FailureCallback]);
 ## Contributors
 
 Original work by [@munnadroid](https://github.com/munnadroid).
-Tanin Srivaraphong
+Forked from [@giver](https://github.com/giver).
 
 ## Example
 
