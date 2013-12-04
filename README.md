@@ -1,27 +1,43 @@
 ## PhoneGap Toast Plugin
 
-+ Author: Tanin Srivaraphong (Original : munnadroid)
++ Author: Bastien Diederichs (Original : munnadroid, giver)
 + License: The MIT License
-+ Tested on PhoneGap/Cordova 2.3.0 - 2.9.0
++ Tested on PhoneGap/Cordova 3.1.0
 
 
 ## Installation Instruction
 
-1. Copy **ToastPlugin.java** to your src folder in package **org.apache.cordova.plugin**
+1. Copy **\plugins\org.apache.cordova.plugin\www\toast.js** to **\assets\www\** folder 
 
-1. Edit res\xml\plugins.xml, add `<plugin name="ToastPlugin" value="org.apache.cordova.plugin.ToastPlugin"/>` into `<plugins> </plugins>`
+1. Copy **ToastPlugin.java** to your src folder in package **org.apache.cordova.plugin** or add all \org\apache\cordova\plugin\ToastPlugin.java if you don't already have the folders created.
 
-1. Add `<script src="toast.js"></script>` in your html file.
+1. Edit res\xml\config.xml (or wherever your config.xml is), add 
+``` xml
+<feature name="ToastPlugin">
+    <param name="android-package" value="org.apache.cordova.plugin.ToastPlugin" />
+</feature>
+```
+at the end of the file, before `</widget>``
+
+1. Edit assets\www\cordova_plugins.js, add
+``` javascript
+{
+    "file": "plugins/org.apache.cordova.plugin/www/toast.js",
+    "id": "org.apache.cordova.plugin.ToastPlugin",
+    "runs": true
+}
+```
+as an element of the array `module.exports`
 
 ## How To Use
 
- 1. Use Toast.longshow
+1. Use Toast.longshow
 
 ``` javascript
 Toast.longshow(Message [,SuccessCallback, FailureCallback]);
 ```
 
- 1. Use Toast.shortshow
+2. Use Toast.shortshow
 
 ``` javascript
 Toast.shortshow(Message [,SuccessCallback, FailureCallback]);
@@ -30,6 +46,7 @@ Toast.shortshow(Message [,SuccessCallback, FailureCallback]);
 ## Contributors
 
 Original work by [@munnadroid](https://github.com/munnadroid).
+Forked from [@giver](https://github.com/giver).
 
 ## Example
 
